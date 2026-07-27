@@ -9,7 +9,7 @@
 
 body {
   background-color: pink;
-  background-image: url(/2026_07_25_0ng_Kleki.png);
+  background-image: url(images/background.png);
   background-blend-mode: difference;
   background-size: cover;
 }
@@ -132,7 +132,7 @@ ul li.checked {
 }
 
 ul li:not(.checked)::before {
-  background-image: url(/4889-pokeball-1599261232.png);
+  background-image: url(images/pokeball.png);
   display: inline-block;
   background-repeat: no-repeat;
   width: 30px;
@@ -168,13 +168,21 @@ ul li.checked::before {
   font-size: 1.75em;
 }
 
+form {
+  width: 100%;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
 .submit input {
-  width: 85%;
   border-radius: 5px;
   height: 2.5rem;
   font-size: 1em;
   border: none;
   padding: 1em;
+  flex: 25;
 }
 
 .submit button {
@@ -189,12 +197,6 @@ ul li.checked::before {
 .submit button:hover {
   background-color: darkgray;
   cursor: pointer;
-}
-
-.submit {
-  margin-top: 1.5em;
-  display: flex;
-  gap: 0.5em;
 }
 
 .todos p {
@@ -233,4 +235,8 @@ select {
 .choose label {
   font-weight: bold;
   margin-right: 0.25em;
+}
+
+.todos {
+  margin: 1em;
 }
