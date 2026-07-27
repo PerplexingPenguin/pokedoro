@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="big-container">
+    <div class="container">
+      <div class="timer">
+        <div class="timer-container">
+          <p id="title">Pokémon Pomodoro</p>
+          <p id="notifier">It's time to focus!</p>
+          <p id="timer">25:00</p>
+        </div>
+        <div class="btns">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+        <img src="" alt="" id="pokemon">
+        <div class="choose">
+          <label for="pokemone">Choose a Pokémon:</label>
+          <select name="pokemone" id="">
+            <option value="sylveon">
+              <img src="/image.png" alt="" width=40">
+              <p>Sylveon</p>
+            </option>
+            <option value="Mabosstiff">
+              <img src="/image (2).png" alt="" width="40">
+              <p>Mabosstiff</p>
+            </option>
+          </select>
+
+        </div>
+      </div>
+      <div class="todos">
+        <p>To-dos</p>
+        <div class="submit">
+          <form action="javascript:void(0);">
+            <input type="text" id="todoInput" placeholder="Add a item">
+            <button type="submit" id="todoSubmit">+</button>
+          </form>
+        </div>
+        <ul id="todoList">
+          <li>catch a pokemon</li>
+          <li class="checked">make a sandwich</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

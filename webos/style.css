@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cause;
+}
+
+body {
+  background-color: pink;
+  background-image: url(/2026_07_25_0ng_Kleki.png);
+  background-blend-mode: difference;
+  background-size: cover;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+
+
+#title {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.btns {
+  flex-direction: row;
+  display: flex;
+  gap: 1em;
+}
+
+.btns button {
+  padding: 10px;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 1.5em;
+  border: none;
+}
+
+.btns button:hover {
+  background: grey;
+  cursor: pointer;
+}
+
+.btns button:active {
+  background: darkslategray;
+}
+
+.todos {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#timer {
+  font-size: 5em;
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 1em;
+  overflow-wrap: break-word;
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  /* https://codeshack.io/css-clip-path-generator/ */
+}
+
+ul li:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+  color: lightslategray;
+  opacity: 50%;
+}
+
+.close {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transform: translateY(5%);
+  height: 1em;
+  width: 1em;
+  font-size: 1.25em;
+  transition: 0.1s ease-in-out;
+}
+
+ul li.checked {
+  color: slategrey;
+  text-decoration: line-through;
+}
+
+ul li:not(.checked)::before {
+  background-image: url(/4889-pokeball-1599261232.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  content: "";
+  margin-bottom: -5px;
+  margin-right: 10px;
+  background-size: 30px 30px;
+}
+
+ul li.checked::before {
+  display: inline-block;
+  content: '✓';
+  background-image: none;
+  margin-right: 5px;
+  color: green;
+}
+
+
+.checked:hover {
+  color: slategray !important;
+  cursor: default !important;
+  opacity: 100% !important;
+}
+
+
+.checked span:hover {
+  color: darkred;
+  cursor: pointer;
+}
+
+.close:hover {
+  font-size: 1.75em;
+}
+
+.submit input {
+  width: 85%;
+  border-radius: 5px;
+  height: 2.5rem;
+  font-size: 1em;
+  border: none;
+  padding: 1em;
+}
+
+.submit button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  font-size: 1.5em;
+  background-color: white;
+  border: none;
+}
+
+.submit button:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 1.5em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.todos p {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline 5px;
+  background: white;
+  padding: 5px;
+  border-radius: 1em;
+}
+
+#pokemon {
+  width: 18em;
+}
+
+#notifier {
+  font-size: 1.5em;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+select {
+  padding: 5px;
+}
+
+::picker(select) {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.choose label {
+  font-weight: bold;
+  margin-right: 0.25em;
+}
