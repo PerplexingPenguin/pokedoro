@@ -11,7 +11,7 @@ const changeImage = (source) => {
 };
 
 const defineImageFocus = () => {
-  changeImage("https://img.pokemondb.net/artwork/avif/sylveon.avif");
+  changeImage("/images/sylveonFocus.gif");
 };
 
 const defineImageBreak = () => {
