@@ -112,6 +112,10 @@ ul li:hover {
   opacity: 50%;
 }
 
+.drop-shadow {
+  filter: drop-shadow(10px 10px 0px black);
+}
+
 .close {
   display: inline-block;
   margin-left: 0.5rem;
