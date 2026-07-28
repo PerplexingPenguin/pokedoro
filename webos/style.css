@@ -115,20 +115,15 @@ ul li:hover {
 
 
 .drop-shadow {
-  border: 5px solid black;
+  filter: drop-shadow(5px 10px 0px black);
 }
 
 .close {
   display: inline-block;
   position: absolute;
-  right: 0;
-  top: 5px;
-  margin-left: 0.5rem;
-  transform: translateY(5%);
-  height: 1em;
-  width: 1em;
-  font-size: 1.25em;
-  transition: 0.1s ease-in-out;
+  right: 10px;
+  font-size: 1.5em;
+  bottom: 6.5px;
 }
 
 ul li.checked {
@@ -173,7 +168,7 @@ ul li.checked::before {
 }
 
 .close:hover {
-  font-size: 1.75em;
+  color: darkred;
 }
 
 form {
