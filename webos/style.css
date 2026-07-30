@@ -36,6 +36,10 @@ body {
     align-items: normal;
   }
 
+  .settings {
+    width: 95% !important;
+  }
+
 }
 
 .timer {
@@ -159,6 +163,27 @@ ul li.checked::before {
   cursor: default !important;
   cursor: pointer !important;
   opacity: 100% !important;
+}
+
+.settings {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em;
+  height: 50%;
+  width: 20%;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container input {
+  width: 50%;
 }
 
 
