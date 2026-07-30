@@ -46,14 +46,28 @@
 
         </div>
       </div>
-      <div class="settings">
-        <div class="focus-slider-container">
-          <label for="focus">Set focus time:</label>
-          <input type="range" min="1" max="60" value="25" class="slider" id="focusSlider" name="focus">
+      <div class="todos">
+        <p class="drop-shadow">To-dos</p>
+        <div class="submit drop-shadow">
+          <form action="javascript:void(0);">
+            <input type="text" id="todoInput" placeholder="Add a item">
+            <button type="submit" id="todoSubmit">+</button>
+          </form>
         </div>
-        <div class="break-slider-container">
+        <ul class="drop-shadow" id="todoList">
+          <li>catch a pokemon</li>
+          <li class="checked">make a sandwich</li>
+        </ul>
+      </div>
+      <div class="settings drop-shadow">
+        <h2>Settings</h2>
+        <div class="slider-container">
+          <label for="focus">Set focus time:</label>
+          <input type="number" id="focus-input">
+        </div>
+        <div class="slider-container">
           <label for="break">Set break time:</label>
-          <input type="range" min="1" max="60" value="25" class="slider" id="breakSlider" name="break">
+          <input type="number" id="break-input">
         </div>
         <div class="ambience-container">
           <p>Set ambience:</p>
@@ -65,19 +79,6 @@
           <div class="volume">
             <input type="range" min="0" max="100" value="25" class="slider" id="volumeSlider" name="volume">
           </div>
-        </div>
-        <div class="todos">
-          <p class="drop-shadow">To-dos</p>
-          <div class="submit drop-shadow">
-            <form action="javascript:void(0);">
-              <input type="text" id="todoInput" placeholder="Add a item">
-              <button type="submit" id="todoSubmit">+</button>
-            </form>
-          </div>
-          <ul class="drop-shadow" id="todoList">
-            <li>catch a pokemon</li>
-            <li class="checked">make a sandwich</li>
-          </ul>
         </div>
       </div>
     </div>
