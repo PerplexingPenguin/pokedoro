@@ -21,7 +21,7 @@ const defineImageBreak = () => {
 defineImageFocus();
 
 
-let startingTime = 0.1;
+let startingTime = 25;
 let timeLeft = startingTime * 60;
 let interval;
 
@@ -44,8 +44,8 @@ const startTimer = () => {
     if (timeLeft === 0) {
       clearInterval(interval);
       alert("Time Up!")
-      if (startingTime === 0.1) {
-        startingTime = 0.05
+      if (startingTime === 25) {
+        startingTime = 5
         timeLeft = startingTime * 60
         notifier.innerHTML = "Great work! Let's take a break..."
         updateTimer();
@@ -53,7 +53,7 @@ const startTimer = () => {
         startTimer();
       }
       else {
-        startingTime = 0.1
+        startingTime = 25
         timeLeft = startingTime * 60
         notifier.innerHTML = "It's time to focus!"
         defineImageFocus();
