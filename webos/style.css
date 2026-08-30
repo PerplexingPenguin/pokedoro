@@ -268,3 +268,10 @@ select {
 .todos {
   margin: 1em;
 }
+
+.ambience-buttons button {
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+  margin-right: 0.25em;
+}
