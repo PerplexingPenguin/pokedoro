@@ -21,4 +21,4 @@ A fun Pokémon pomodoro website and quite rudimentary at best.
 
 Try this [here](https://pokedoro-silk.vercel.app/)
 
-![](.webos/images/demo.png)
+![](./webos/images/demo.png)
