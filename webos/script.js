@@ -15,7 +15,7 @@ const defineImageFocus = () => {
 };
 
 const defineImageBreak = () => {
-  changeImage("https://img.pokemondb.net/artwork/large/pikachu.jpg");
+  changeImage("/images/pokeball.png");
 };
 
 defineImageFocus();
