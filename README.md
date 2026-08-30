@@ -19,6 +19,6 @@ A fun Pokémon pomodoro website and quite rudimentary at best.
 - Set manual and focus times
 - Beautification
 
-Try this ![here](https://pokedoro-silk.vercel.app/)
+Try this [here](https://pokedoro-silk.vercel.app/)
 
 ![](.images/demo.png)
