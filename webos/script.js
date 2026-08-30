@@ -11,11 +11,11 @@ const changeImage = (source) => {
 };
 
 const defineImageFocus = () => {
-  changeImage("/images/sylveonFocus.gif");
+  changeImage("./images/sylveonFocus.gif");
 };
 
 const defineImageBreak = () => {
-  changeImage("/images/pokeball.png");
+  changeImage("./images/pokeball.png");
 };
 
 defineImageFocus();
@@ -68,7 +68,7 @@ const stopTimer = () => clearInterval(interval);
 
 const resetTimer = () => {
   clearInterval(interval);
-  timeLeft = 6;
+  timeLeft = 25 * 60;
   notifier.innerHTML = "It's time to focus!"
   defineImageFocus();
   updateTimer();
