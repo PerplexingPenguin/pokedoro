@@ -4,6 +4,8 @@ const reset = document.getElementById("reset");
 const timer = document.getElementById("timer");
 const notifier = document.getElementById("notifier");
 var image = "";
+const pokemone = document.getElementById("pokemone");
+var pokemonImg = pokemone.value;
 
 const changeImage = (source) => {
   let img = document.getElementById("pokemon");
@@ -11,7 +13,15 @@ const changeImage = (source) => {
 };
 
 const defineImageFocus = () => {
-  changeImage("./images/sylveonFocus.gif");
+  if (pokemonImg === "sylveon") {
+    changeImage("./images/sylveonFocus.gif");
+  } else if (pokemonImg === "mabosstiff") {
+    changeImage("./images/mabosstiffFocus.avif");
+  } else if (pokemonImg === "minior") {
+    changeImage("./images/miniorFocus.avif");
+  } else if (pokemonImg === "mimikyu") {
+    changeImage("./images/mimikyuFocus.avif");
+  }
 };
 
 const defineImageBreak = () => {
@@ -133,3 +143,8 @@ const newElement = () => {
 
 const submit = document.getElementById("todoSubmit");
 submit.addEventListener('click', newElement);
+pokemone.addEventListener("change", () => {
+  pokemonImg = pokemone.value;
+  console.log(pokemonImg);
+  defineImageFocus();
+});

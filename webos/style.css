@@ -237,8 +237,19 @@ form {
   border-radius: 1em;
 }
 
+@keyframes myAnim {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
+  }
+}
+
 #pokemon {
   width: 18em;
+  animation: 2s infinite linear myAnim alternate;
 }
 
 #notifier {
